@@ -1,5 +1,2 @@
-const toggle = document.getElementById("themeToggle");
-
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-});
+// Optional future animations can go here
+console.log("Elite portfolio loaded.");
