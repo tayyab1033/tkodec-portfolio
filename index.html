@@ -1,86 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Tayyab Ashraf | Android Developer</title>
   <meta charset="UTF-8">
+  <title>Tayyab Ashraf | Senior Android Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
-    header {
-      padding: 80px 20px;
-    }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 20px;
-      color: #94a3b8;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #6366f1;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 600px;
-      border-radius: 12px;
-    }
-    footer {
-      padding: 30px;
-      background: #020617;
-      color: #64748b;
-    }
-  </style>
-</head>
+  <meta name="description" content="Senior Android Developer with 7+ years experience in Kotlin, Jetpack Compose, Clean Architecture, WebRTC, Payments and Scalable Apps.">
 
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
 <header>
-  <h1>Tayyab Ashraf</h1>
-  <p>Senior Android Developer | 7+ Years Experience</p>
-  <a href="#contact" class="btn">Contact Me</a>
+  <div class="container">
+    <h1>Tayyab Ashraf</h1>
+    <p class="subtitle">Senior Android / Mobile Application Engineer</p>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </div>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <div class="card">
+<section class="about">
+  <div class="container">
+    <h2>About Me</h2>
     <p>
-      Experienced Android Developer specializing in Jetpack Compose,
-      Clean Architecture, and scalable mobile applications.
-      Currently expanding into backend and full-stack development.
+      Senior Android Engineer with 7+ years of experience building scalable,
+      production-grade mobile applications using Kotlin, MVVM and Clean Architecture.
+      Expertise in real-time communication (WebRTC), media streaming, payments
+      and performance optimization.
     </p>
   </div>
 </section>
 
-<section>
-  <h2>Skills</h2>
-  <div class="card">
-    <p>Android • Kotlin • Jetpack Compose • Clean Architecture • REST APIs • Firebase • Node.js (Learning)</p>
+<section class="skills">
+  <div class="container">
+    <h2>Technical Skills</h2>
+
+    <div class="skill">
+      <span>Kotlin / Android</span>
+      <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Jetpack Compose</span>
+      <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>MVVM & Clean Architecture</span>
+      <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>WebRTC & Real-Time Systems</span>
+      <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>Backend & REST APIs</span>
+      <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+    </div>
+
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: tayyab@tkodec.com</p>
-    <p>GitHub: github.com/yourusername</p>
+<section class="experience">
+  <div class="container">
+    <h2>Professional Experience</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Senior Software Engineer – Android</h3>
+        <span>LR Technologies | 2023 – Present</span>
+        <p>Led feature development for production-scale social & networking app including WebRTC calling, real-time chat, payment integration and performance optimization.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Software Engineer – Android</h3>
+        <span>Coeus Solutions | 2021 – 2023</span>
+        <p>Developed forgery-proof artwork passport app, OpenCV damage detection, NFT marketplace features.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Software Engineer – Android</h3>
+        <span>Ozi Technologies | 2019 – 2021</span>
+        <p>Built and maintained multiple Play Store apps including utility, social and entertainment apps.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: tayyab1033@gmail.com</p>
+    <p>GitHub: github.com/tayyab1033</p>
+    <p>LinkedIn: linkedin.com/in/tayyab-ashraf</p>
   </div>
 </section>
 
@@ -88,5 +102,6 @@
   © 2026 tkodec.com
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
