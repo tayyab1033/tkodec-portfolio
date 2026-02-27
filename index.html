@@ -4,94 +4,119 @@
   <meta charset="UTF-8">
   <title>Tayyab Ashraf | Senior Android Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Senior Android Developer with 7+ years experience in Kotlin, Jetpack Compose, Clean Architecture, WebRTC, Payments and Scalable Apps.">
+  <meta name="description" content="Senior Android Engineer specializing in scalable Android apps, real-time systems, WebRTC, Clean Architecture and performance optimization.">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <h1>Tayyab Ashraf</h1>
-    <p class="subtitle">Senior Android / Mobile Application Engineer</p>
-    <button id="themeToggle">🌙 Toggle Theme</button>
+<nav>
+  <div class="nav-container">
+    <div class="logo">TAYYAB.</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>Senior Android Engineer</h1>
+    <h2>Tayyab Ashraf</h2>
+    <p>
+      7+ Years building production-grade Android applications.
+      Real-time systems • Clean Architecture • WebRTC • Payments • Performance.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary">Hire Me</a>
+      <a href="#" class="btn-outline">Download CV</a>
+    </div>
   </div>
 </header>
 
-<section class="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      Senior Android Engineer with 7+ years of experience building scalable,
-      production-grade mobile applications using Kotlin, MVVM and Clean Architecture.
-      Expertise in real-time communication (WebRTC), media streaming, payments
-      and performance optimization.
-    </p>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <div class="card">
+    Senior Android Engineer with strong expertise in Kotlin,
+    Jetpack Compose, MVVM and Clean Architecture. Experienced in
+    real-time communication (WebRTC), Socket.IO chat systems,
+    payment integrations and production performance optimization.
   </div>
 </section>
 
-<section class="skills">
-  <div class="container">
-    <h2>Technical Skills</h2>
-
-    <div class="skill">
-      <span>Kotlin / Android</span>
-      <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Jetpack Compose</span>
-      <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>MVVM & Clean Architecture</span>
-      <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>WebRTC & Real-Time Systems</span>
-      <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Backend & REST APIs</span>
-      <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
-    </div>
-
+<section id="skills" class="section dark-section">
+  <h2>Core Expertise</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Android (Kotlin, Java)</div>
+    <div class="skill-card">Jetpack Compose</div>
+    <div class="skill-card">MVVM / Clean Architecture</div>
+    <div class="skill-card">WebRTC & Real-Time Systems</div>
+    <div class="skill-card">Room / Retrofit / Coroutines</div>
+    <div class="skill-card">Payment Integration</div>
+    <div class="skill-card">REST APIs / Backend Basics</div>
+    <div class="skill-card">CI/CD & Engineering Practices</div>
   </div>
 </section>
 
-<section class="experience">
-  <div class="container">
-    <h2>Professional Experience</h2>
+<section id="experience" class="section">
+  <h2>Professional Experience</h2>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Senior Software Engineer – Android</h3>
-        <span>LR Technologies | 2023 – Present</span>
-        <p>Led feature development for production-scale social & networking app including WebRTC calling, real-time chat, payment integration and performance optimization.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Software Engineer – Android</h3>
-        <span>Coeus Solutions | 2021 – 2023</span>
-        <p>Developed forgery-proof artwork passport app, OpenCV damage detection, NFT marketplace features.</p>
-      </div>
-
-      <div class="timeline-item">
-        <h3>Software Engineer – Android</h3>
-        <span>Ozi Technologies | 2019 – 2021</span>
-        <p>Built and maintained multiple Play Store apps including utility, social and entertainment apps.</p>
-      </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Senior Software Engineer – LR Technologies</h3>
+      <span>2023 – Present</span>
+      <p>
+        Led Android feature development for a production-scale social networking app.
+        Designed WebRTC calling, real-time chat with Socket.IO + Room,
+        short video feeds and payment workflows.
+      </p>
     </div>
 
+    <div class="timeline-item">
+      <h3>Software Engineer – Coeus Solutions</h3>
+      <span>2021 – 2023</span>
+      <p>
+        Developed forgery-proof artwork passport system.
+        Implemented OpenCV damage detection & NFT marketplace features.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Software Engineer – Ozi Technologies</h3>
+      <span>2019 – 2021</span>
+      <p>
+        Built multiple Play Store applications including utilities,
+        social apps and productivity tools.
+      </p>
+    </div>
   </div>
 </section>
 
-<section class="contact">
-  <div class="container">
-    <h2>Contact</h2>
+<section id="projects" class="section dark-section">
+  <h2>Selected Work</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Real-Time Social Platform</h3>
+      <p>WebRTC calling, video feeds, chat persistence, payment unlocking.</p>
+    </div>
+    <div class="project-card">
+      <h3>Artwork Passport App</h3>
+      <p>Forgery-proof NFT marketplace with OpenCV damage detection.</p>
+    </div>
+    <div class="project-card">
+      <h3>Utility & Lifestyle Apps</h3>
+      <p>Multiple apps published on Google Play Store.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Let's Work Together</h2>
+  <div class="card center">
     <p>Email: tayyab1033@gmail.com</p>
     <p>GitHub: github.com/tayyab1033</p>
     <p>LinkedIn: linkedin.com/in/tayyab-ashraf</p>
@@ -99,7 +124,7 @@
 </section>
 
 <footer>
-  © 2026 tkodec.com
+  © 2026 tkodec.com | Built with precision.
 </footer>
 
 <script src="script.js"></script>
