@@ -1,16 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="refresh" content="0; url=/portfolio/">
-    <script type="text/javascript">
-        window.location.href = "/portfolio/"
-    </script>
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <title>TKODEC | Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TKODEC Store - Premium Android UI Kits, SDKs, and App Templates.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=3">
+    <style>
+        /* Custom styles to hide sections not needed for store-only page */
+        .hero,
+        .about,
+        .skills,
+        .experience,
+        .projects,
+        .contact,
+        .hero-bg-grid,
+        .hero-glow,
+        .scroll-indicator {
+            display: none !important;
+        }
+
+        #store {
+            padding-top: 140px !important;
+            min-height: 80vh;
+        }
+
+        .nav-container {
+            justify-content: space-between;
+        }
+    </style>
 </head>
 
 <body>
-    If you are not redirected, <a href="/portfolio/">click here</a>.
+
+    <!-- ======= Navbar ======= -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <span class="logo-bracket">&lt;</span>TKODEC<span class="logo-slash"> /</span><span
+                    class="logo-bracket">&gt;</span>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
+                <li><a href="/portfolio/#about" class="nav-link">About</a></li>
+                <li><a href="/portfolio/#projects" class="nav-link">Work</a></li>
+                <li><a href="/portfolio/#contact" class="nav-link btn-nav">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======= Store ======= -->
+    <section id="store" class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll visible">
+                <span class="section-tag">TKODEC Store</span>
+                <h2 class="section-title">Digital Marketplace</h2>
+                <p class="section-desc">Premium Android UI kits, SDKs, and app templates for high-performance projects.
+                </p>
+            </div>
+            <div class="store-grid">
+
+                <div class="store-card animate-on-scroll visible" data-tilt>
+                    <div class="store-badge premium">Premium</div>
+                    <div class="store-image">
+                        <img src="assets/ui_kit.png" alt="Android UI Kit">
+                    </div>
+                    <div class="store-content">
+                        <h3>Pixel Perfect Android UI Kit</h3>
+                        <p>150+ screens, modern dark aesthetic, and full Jetpack Compose support.</p>
+                        <div class="store-footer">
+                            <span class="store-price">$49</span>
+                            <a href="/portfolio/#contact" class="btn-store">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="store-card animate-on-scroll visible" data-tilt>
+                    <div class="store-badge">Developer Tool</div>
+                    <div class="store-image">
+                        <img src="assets/webrtc_sdk.png" alt="WebRTC Video SDK">
+                    </div>
+                    <div class="store-content">
+                        <h3>WebRTC Video SDK</h3>
+                        <p>Production-ready real-time communication library for high-quality video/voice.</p>
+                        <div class="store-footer">
+                            <span class="store-price">$129</span>
+                            <a href="/portfolio/#contact" class="btn-store">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="store-card animate-on-scroll visible" data-tilt>
+                    <div class="store-badge">Template</div>
+                    <div class="store-image">
+                        <img src="assets/kids_app.png" alt="Kids Learning App Template">
+                    </div>
+                    <div class="store-content">
+                        <h3>Kids Learning App Template</h3>
+                        <p>Engaging educational app framework with playful UI and interactive lessons.</p>
+                        <div class="store-footer">
+                            <span class="store-price">$79</span>
+                            <a href="/portfolio/#contact" class="btn-store">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 80px;" class="animate-on-scroll visible">
+                <a href="/portfolio/" class="btn btn-outline">
+                    <span>View Full Developer Portfolio</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="margin-left: 8px;">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>TKODEC<span class="logo-slash"> /</span><span
+                        class="logo-bracket">&gt;</span>
+                </div>
+                <p class="footer-text">Designed & built with precision</p>
+                <p class="footer-copy">&copy; 2026 tkodec.com — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=3"></script>
 </body>
 
 </html>
