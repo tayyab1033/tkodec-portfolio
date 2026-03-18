@@ -3,40 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TKODEC | Store</title>
+    <title>Premium Sports & Leather Goods | Sialkot</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TKODEC Store - Premium Android UI Kits, SDKs, and App Templates.">
+    <meta name="description" content="High-quality sports and leather products for international buyers. Based in Sialkot, Pakistan.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css?v=3">
-    <style>
-        /* Custom styles to hide sections not needed for store-only page */
-        .hero,
-        .about,
-        .skills,
-        .experience,
-        .projects,
-        .contact,
-        .hero-bg-grid,
-        .hero-glow,
-        .scroll-indicator {
-            display: none !important;
-        }
-
-        #store {
-            padding-top: 140px !important;
-            min-height: 80vh;
-        }
-
-        .nav-container {
-            justify-content: space-between;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 
 <body>
@@ -44,107 +19,205 @@
     <!-- ======= Navbar ======= -->
     <nav id="navbar" class="scrolled">
         <div class="nav-container">
-            <a href="/" class="logo">
-                <span class="logo-bracket">&lt;</span>TKODEC<span class="logo-slash"> /</span><span
-                    class="logo-bracket">&gt;</span>
+            <a href="#hero" class="logo" style="display:flex; align-items:center;">
+                <img src="assets/tkodec_logo.svg" alt="TKODEC Exports Logo" style="height: 48px; width: auto;">
             </a>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
-                <li><a href="/portfolio/#about" class="nav-link">About</a></li>
-                <li><a href="/portfolio/#projects" class="nav-link">Work</a></li>
-                <li><a href="/portfolio/#contact" class="nav-link btn-nav">Hire Me</a></li>
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link btn-nav">Contact Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- ======= Store ======= -->
-    <section id="store" class="section">
+    <!-- ======= Hero ======= -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <h1 class="animate-on-scroll">Premium Sports & Leather Goods Manufacturer from Sialkot, Pakistan</h1>
+            <p class="hero-sub animate-on-scroll">High-quality products for international buyers with flexible MOQ and competitive pricing.</p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="#products" class="btn btn-primary">View Products</a>
+                <a href="https://wa.me/923000000000" target="_blank" class="btn btn-outline">WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Products ======= -->
+    <section id="products" class="section bg-light">
         <div class="container">
-            <div class="section-header animate-on-scroll visible">
-                <span class="section-tag">TKODEC Store</span>
-                <h2 class="section-title">Digital Marketplace</h2>
-                <p class="section-desc">Premium Android UI kits, SDKs, and app templates for high-performance projects.
-                </p>
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Our Catalog</span>
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-desc">Explore our premium export-quality selection.</p>
             </div>
-            <div class="store-grid">
-
-                <div class="store-card animate-on-scroll visible" data-tilt>
-                    <div class="store-badge premium">Premium</div>
-                    <div class="store-image">
-                        <img src="assets/ui_kit.png" alt="Android UI Kit">
-                    </div>
-                    <div class="store-content">
-                        <h3>Pixel Perfect Android UI Kit</h3>
-                        <p>150+ screens, modern dark aesthetic, and full Jetpack Compose support.</p>
-                        <div class="store-footer">
-                            <span class="store-price">$49</span>
-                            <a href="/portfolio/#contact" class="btn-store">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="store-card animate-on-scroll visible" data-tilt>
-                    <div class="store-badge">Developer Tool</div>
-                    <div class="store-image">
-                        <img src="assets/webrtc_sdk.png" alt="WebRTC Video SDK">
-                    </div>
-                    <div class="store-content">
-                        <h3>WebRTC Video SDK</h3>
-                        <p>Production-ready real-time communication library for high-quality video/voice.</p>
-                        <div class="store-footer">
-                            <span class="store-price">$129</span>
-                            <a href="/portfolio/#contact" class="btn-store">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="store-card animate-on-scroll visible" data-tilt>
-                    <div class="store-badge">Template</div>
-                    <div class="store-image">
-                        <img src="assets/kids_app.png" alt="Kids Learning App Template">
-                    </div>
-                    <div class="store-content">
-                        <h3>Kids Learning App Template</h3>
-                        <p>Engaging educational app framework with playful UI and interactive lessons.</p>
-                        <div class="store-footer">
-                            <span class="store-price">$79</span>
-                            <a href="/portfolio/#contact" class="btn-store">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-
+            
+            <div class="filter-container animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="football">Footballs</button>
+                <button class="filter-btn" data-filter="gloves">Gloves</button>
+                <button class="filter-btn" data-filter="gymwear">Gym Wear</button>
+                <button class="filter-btn" data-filter="bags">Bags</button>
             </div>
 
-            <div style="text-align: center; margin-top: 80px;" class="animate-on-scroll visible">
-                <a href="/portfolio/" class="btn btn-outline">
-                    <span>View Full Developer Portfolio</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        style="margin-left: 8px;">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </a>
+            <div class="product-grid">
+                
+                <div class="product-card animate-on-scroll" data-category="football">
+                    <div class="product-image">
+                        <img src="assets/product_football.png" alt="Leather Football">
+                    </div>
+                    <div class="product-content">
+                        <h3>Match-Grade Footballs</h3>
+                        <p>Hand-stitched precision balls made with premium PU and real leather options.</p>
+                        <a href="#contact" class="btn-product">Contact for Price</a>
+                    </div>
+                </div>
+
+                <div class="product-card animate-on-scroll" data-category="gloves">
+                    <div class="product-image">
+                        <img src="assets/product_gloves.png" alt="Leather Gloves">
+                    </div>
+                    <div class="product-content">
+                        <h3>Leather Sports Gloves</h3>
+                        <p>Durable, reinforced motorcycle and weightlifting gloves designed for maximum grip.</p>
+                        <a href="#contact" class="btn-product">Contact for Price</a>
+                    </div>
+                </div>
+
+                <div class="product-card animate-on-scroll" data-category="gymwear">
+                    <div class="product-image">
+                        <img src="assets/product_gymwear.png" alt="Gym Wear">
+                    </div>
+                    <div class="product-content">
+                        <h3>Performance Gym Wear</h3>
+                        <p>Moisture-wicking, flexible activewear tailored for athletes. Custom branding available.</p>
+                        <a href="#contact" class="btn-product">Contact for Price</a>
+                    </div>
+                </div>
+
+                <div class="product-card animate-on-scroll" data-category="bags">
+                    <div class="product-image">
+                        <img src="assets/product_leatherbag.png" alt="Leather Bag">
+                    </div>
+                    <div class="product-content">
+                        <h3>Luxury Duffel Bags</h3>
+                        <p>Genuine leather travel and gym bags boasting export-certified craftsmanship.</p>
+                        <a href="#contact" class="btn-product">Contact for Price</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= About Us ======= -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-text animate-on-scroll">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Rooted in Sialkot, Built for the World.</h2>
+                <p>Based in the global hub for sports goods—Sialkot, Pakistan—we partner with experienced manufacturers to deliver uncompromising quality. Our focus on durability and strict export standards ensures every product meets international buyer expectations.</p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <strong>Low MOQ</strong>
+                        <span>Perfect for new clients & small runs.</span>
+                    </div>
+                    <div class="highlight">
+                        <strong>Custom Manufacturing</strong>
+                        <span>OEM & ODM services available.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="section bg-light">
+        <div class="container contact-container">
+            <div class="contact-header animate-on-scroll">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Partner With Us</h2>
+                <p>Ready to place an order or request a sample? Fill out the form or reach us directly on WhatsApp.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="info-card">
+                        <h3>Location</h3>
+                        <p>Sialkot, Punjab, Pakistan</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Email</h3>
+                        <p>exports@tkodec.com</p>
+                    </div>
+                    <div class="info-card whatsapp-card">
+                        <h3>WhatsApp</h3>
+                        <p>Direct line to sales</p>
+                        <a href="https://wa.me/923000000000" target="_blank" class="btn-whatsapp">Chat on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <!-- Formspree endpoint placeholder -->
+                    <form action="https://formspree.io/f/placeholder" method="POST" id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name / Company</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country" required placeholder="USA, UK, etc.">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Inquiry</button>
+                        <div id="formStatus" class="form-status"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ======= Footer ======= -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-bracket">&lt;</span>TKODEC<span class="logo-slash"> /</span><span
-                        class="logo-bracket">&gt;</span>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo" style="display:inline-block; margin-bottom: 16px;">
+                    <img src="assets/tkodec_logo.svg" alt="TKODEC Exports Logo" style="height: 60px; width: auto; filter: invert(1);">
                 </div>
-                <p class="footer-text">Designed & built with precision</p>
-                <p class="footer-copy">&copy; 2026 tkodec.com — All rights reserved.</p>
+                <p>Premium manufacturing partner.</p>
+                <p>Sialkot, Pakistan</p>
             </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: exports@tkodec.com</p>
+                <p><a href="https://wa.me/923000000000" target="_blank" style="color:var(--text-color);text-decoration:none;">WhatsApp: +92 300 000 0000</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 tkodec.com — All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 
 </html>
