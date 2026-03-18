@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
-    <g transform="translate(5, 12)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 60" width="175" height="60">
+    <g transform="translate(0, 10)">
         <polygon points="0,0 36,0 18,36" fill="#111827"/>
         <polygon points="12,12 48,12 30,48" fill="#111827" opacity="0.6"/>
     </g>
-    <text x="60" y="36" font-family="'Inter', -apple-system, sans-serif" font-size="28" font-weight="800" fill="#111827" letter-spacing="-1">TKODEC</text>
-    <text x="62" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="10" font-weight="600" fill="#64748b" letter-spacing="4">EXPORTS</text>
+    <text x="56" y="36" font-family="'Inter', -apple-system, sans-serif" font-size="28" font-weight="900" fill="#111827" letter-spacing="-1">TKODEC</text>
+    <text x="58" y="52" font-family="'Inter', -apple-system, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="4">EXPORTS</text>
 </svg>
