@@ -214,10 +214,24 @@ nav.scrolled {
   justify-content: center;
   text-align: center;
   padding: 120px 0 80px;
+  position: relative;
+  background-image: url('assets/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
 .hero-content {
   max-width: 800px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -225,13 +239,13 @@ nav.scrolled {
   font-weight: 800;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: var(--text-primary);
+  color: #ffffff;
   letter-spacing: -1px;
 }
 
 .hero-sub {
   font-size: clamp(18px, 2.5vw, 22px);
-  color: var(--text-secondary);
+  color: #e2e8f0;
   margin-bottom: 40px;
   line-height: 1.6;
 }
