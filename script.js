@@ -1,122 +1,63 @@
-// ============================================
-// SCROLL ANIMATIONS (Intersection Observer)
-// ============================================
+// Scroll Animation Observer
 const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
 }, observerOptions);
 
-document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// ============================================
-// NAVBAR SCROLL EFFECT
-// ============================================
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-}, { passive: true });
-
-// ============================================
-// MOBILE MENU
-// ============================================
+// Mobile Menu Toggle
 const mobileToggle = document.getElementById('mobileToggle');
-const navLinks = document.getElementById('navLinks');
+const mobileNav = document.getElementById('mobileNav');
 
-mobileToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-
-// Close mobile menu on link click
-navLinks.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-  });
-});
-
-// ============================================
-// PRODUCT FILTERING
-// ============================================
-const filterBtns = document.querySelectorAll('.filter-btn');
-const productCards = document.querySelectorAll('.product-card');
-
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // Remove active class from all
-    filterBtns.forEach(b => b.classList.remove('active'));
-    // Add active class to clicked
-    btn.classList.add('active');
-
-    const filterValue = btn.getAttribute('data-filter');
-
-    productCards.forEach(card => {
-      if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-        card.style.display = 'flex';
-        // Trigger small animation
-        card.style.opacity = '0';
-        setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-        }, 50);
-      } else {
-        card.style.display = 'none';
-      }
+if (mobileToggle && mobileNav) {
+    mobileToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('open');
     });
-  });
-});
-
-// ============================================
-// FORM SUBMISSION
-// ============================================
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Check if it's pointing to formspree
-    const action = contactForm.getAttribute('action');
-    if (action.includes('placeholder')) {
-      // Just show success since no real endpoint provided
-      formStatus.textContent = 'Thank you! We will contact you soon.';
-      formStatus.style.color = '#10b981';
-      contactForm.reset();
-    } else {
-      // Actually submit
-      const formData = new FormData(contactForm);
-      fetch(action, {
-        method: 'POST',
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          formStatus.textContent = 'Thank you! We will contact you soon.';
-          formStatus.style.color = '#10b981';
-          contactForm.reset();
-        } else {
-          formStatus.textContent = 'Oops! There was a problem submitting your form.';
-          formStatus.style.color = '#ef4444';
-        }
-      }).catch(error => {
-        formStatus.textContent = 'Oops! There was a problem submitting your form.';
-        formStatus.style.color = '#ef4444';
-      });
-    }
-  });
 }
+
+// Add to Cart Mock Functionality
+const addToCartBtns = document.querySelectorAll('.add-to-cart');
+const cartCount = document.querySelector('.cart-count');
+const cartToast = document.getElementById('cartToast');
+let currentItems = 0;
+
+addToCartBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Button effect
+        const originalText = btn.textContent;
+        btn.textContent = 'Adding...';
+        btn.style.backgroundColor = 'var(--color-primary)';
+        btn.style.color = '#fff';
+        
+        setTimeout(() => {
+            // Update Number
+            currentItems++;
+            if (cartCount) cartCount.textContent = currentItems;
+            
+            // Restore button
+            btn.textContent = originalText;
+            btn.style.backgroundColor = '';
+            btn.style.color = '';
+            
+            // Show toast
+            if (cartToast) {
+                cartToast.classList.add('show');
+                setTimeout(() => {
+                    cartToast.classList.remove('show');
+                }, 3000);
+            }
+        }, 600);
+    });
+});
